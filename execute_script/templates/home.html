@@ -1,0 +1,20 @@
+<html>
+<body>
+
+<form action="/external/" method="post">
+	{% csrf_token %}
+	<hr><br>
+	{{data1}}
+	<br><br><hr><br>
+	
+	<input type="submit" value="Execute a Python sript">
+
+	<label for="textar">Servers</label>
+	<textarea id="textar" name="param" rows="4" cols="50">
+	</textarea>
+	<br><br>
+</form>
+	
+</body>
+</html>
+
